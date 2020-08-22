@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        
+        <TextView
+            android:id="@+id/txtViewDanhSachIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/txtViewTenBaiHat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/txtViewDanhSachIndex"
+            android:text="Ten bai hat"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+        
+        <TextView
+            android:id="@+id/txtViewTenCaSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtViewTenBaiHat"
+            android:layout_toRightOf="@+id/txtViewDanhSachIndex"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="TEN CA SI"
+            android:textColor="#B7A8CD"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

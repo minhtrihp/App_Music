@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/playerbg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <LinearLayout
+            android:id="@+id/albums"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:pointerIcon="hand"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="#000000"
+                android:gravity="center_vertical"
+                android:text="Albums"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/imgalbums"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:background="@drawable/sevenring" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/albums"
+            android:pointerIcon="hand"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="#000000"
+                android:gravity="center_vertical"
+                android:text="Chủ Đề"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/imgartist"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:background="@drawable/tuoitre_album" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlist"
+            android:pointerIcon="hand"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="#000000"
+                android:gravity="center_vertical"
+                android:text="Playlist"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/imgplaylist"
+                android:layout_height="220dp"
+                android:layout_width="180dp"
+                android:background="@drawable/motculua"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tracks"
+            android:layout_toRightOf="@+id/playlist"
+            android:pointerIcon="hand"
+            android:orientation="vertical"
+            android:layout_weight="5">
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="#000000"
+                android:gravity="center_vertical"
+                android:text="Bài Hát"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/imgtracks"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:background="@drawable/sickboy" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

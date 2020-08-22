@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/frameLayoutTheLoaiTheoChuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:id="@+id/imgViewTheLoaiTheoChuDe"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtViewTenTheLoaiTheoChuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            android:maxWidth="200dp"
+            android:text="Nhạc US UK HOTT trong tháng 10"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Various Artists"
+            android:textColor="#000000"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

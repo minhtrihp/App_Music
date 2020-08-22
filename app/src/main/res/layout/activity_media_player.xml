@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.MediaPlayerActivity"
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:background="@drawable/playerbg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarMediaPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMediaPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    </androidx.viewpager.widget.ViewPager>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="6dp">
+            <!-- Repeat Button -->
+            <ImageButton
+                android:id="@+id/btnRepeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@drawable/btn_repeat" />
+
+            <!-- Shuffle Button -->
+            <ImageButton
+                android:id="@+id/btnShuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@drawable/btn_shuffle" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewCurrentDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:gravity="center"/>
+
+            <SeekBar
+                android:id="@+id/seekBarSong"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:background="@drawable/bg_header_2"
+                android:theme="@style/SeekBarColor"
+                android:layout_weight="9"/>
+
+            <TextView
+                android:id="@+id/txtViewTotalDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/bg_header_2">
+
+            <ImageButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_2"
+                android:padding="3dp"
+                android:src="@drawable/btn_previous" />
+
+            <ImageButton
+                android:id="@+id/btnBackward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_2"
+                android:padding="3dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/btn_rewind" />
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_2"
+                android:padding="3dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/btn_play" />
+
+            <ImageButton
+                android:id="@+id/btnForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_2"
+                android:padding="3dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/btn_forward" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_2"
+                android:padding="3dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/btn_end" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>

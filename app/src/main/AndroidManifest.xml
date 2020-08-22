@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appmusic">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="activity.MediaPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="activity.DanhSachTatCaAlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:name="activity.DanhSachTheLoaiTheoChuDeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="activity.DanhSachTatCaChuDeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="activity.DanhSachBaiHatPlayListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="activity.DanhSachBaiHatActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PlayListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ResActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Main2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="activity.HomePage" android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+    </application>
+
+</manifest>

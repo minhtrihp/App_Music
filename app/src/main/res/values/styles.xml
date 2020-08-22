@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#721D97</item>
+    </style>
+
+    <style name="SeekBarColor" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#721D97</item>
+        <item name="android:colorControlNormal">#B3B9BC</item>
+    </style>
+
+    <style name="AppThemeTwo" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#721D97</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splashscreen</item>
+    </style>
+
+</resources>
